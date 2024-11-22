@@ -118,6 +118,16 @@ body{
     min-width: 280px;
 }
 
+/* SCROLL ANIMATION  */
+.hide{
+    transform: translateY(200px);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.hide.show{
+    transform: translateY(0px);
+    opacity: 1;
+}
 /* footer */
 
 .fa-brands:hover{
@@ -130,6 +140,7 @@ footer{
     position: relative;
     bottom: 0px;
     margin-top: auto;
+    overflow: hidden;
 }
 
 .FooterContainer{
@@ -146,10 +157,14 @@ footer{
     color: var(--text);
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s ease;
 }
 .LinkContainer{
     display: flex;
     flex-direction: column;
+}
+.LinkContainer a:hover{
+    color: var(--secondary);
 }
 .FooterContainer p{
     font-size: 16px;

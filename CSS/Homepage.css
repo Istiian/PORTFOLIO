@@ -83,10 +83,12 @@ body{
     border: 1px solid var(--primary);
     font-family: var(--font);
     margin-top: 18px;
+    transition: 0.5s ease;
+    font-weight: bold;
 
 }
 .IconButtonContainer button:hover{
-    scale: 110%;
+    scale: 95%;
 
 }    
 
@@ -105,18 +107,23 @@ body{
 }
 .IconContainer ul li a i{
     font-size: 40px;
+    color: var(--text);
+    transition: 0.3s ease;
 }
-.fa-instagram{
-    color: #E4405F;
-}
-.fa-github{
-    color: white;
-}
-.fa-linkedin{
-    color: #0A66C2;
-}
+
 .fa-brands:hover{
     scale: 110%;
+}
+
+/* SCROLL ANIMATION  */
+.hide{
+    transform: translateY(200px);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.hide.show{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 footer{
@@ -125,6 +132,7 @@ footer{
     position: relative;
     bottom: 0px;
     margin-top: auto;
+    overflow: hidden;
 }
 
 .FooterContainer{
@@ -141,6 +149,10 @@ footer{
     color: var(--text);
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s ease ;
+}
+.LinkContainer a:hover{
+    color: var(--secondary);
 }
 .LinkContainer{
     display: flex;
@@ -159,4 +171,5 @@ footer{
 .FooterIcons a i{
     font-size: 25px;
     margin-inline: 5px;
+    transition: 0.3s ease;
 }
