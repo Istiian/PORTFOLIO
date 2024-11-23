@@ -6,7 +6,7 @@
 }
 :root{
     --primary:#131313;
-    --secondary:#186218;
+    --secondary:#5CCF5C;
     --text:#F5F5F5;
     --accent:#FFC107;
     --font:"Expletus Sans";
@@ -97,6 +97,7 @@ h1 {
 .contactContainer h2{
     font-size: clamp(50px, 2vh, 60px);
     font-family: var(--font);
+    color: var(--secondary);
 }
 .contactContainer p{
     font-size: clamp(30px, 2vh, 40px);

@@ -6,7 +6,7 @@
 }
 :root{
     --primary:#2C2C2C;
-    --secondary:#186218;
+    --secondary:#5CCF5C;
     --text:#F5F5F5;
     --accent:#FFC107;
     --font:"Expletus Sans";
@@ -163,6 +163,7 @@ footer{
     display: block;
     color: var(--text);
     width: 100%;
+    word-wrap: break-word;
     text-align: center;
 }
 .FooterContainer ul li{
@@ -172,4 +173,13 @@ footer{
     font-size: 25px;
     margin-inline: 5px;
     transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 500px) {
+    .IconButtonContainer{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
 }

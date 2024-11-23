@@ -6,7 +6,7 @@
 }
 :root{
     --primary:#2c2c2c;
-    --secondary:#186218;
+    --secondary:#5CCF5C;
     --text:#F5F5F5;
     --accent:#FFC107;
     --font:"Expletus Sans";
@@ -92,7 +92,7 @@ body{
 
 .ProjectName{
     font-size: clamp(45px, 2vh, 60px);
-    color: var(--text);
+    color: var(--secondary);
     font-family: var(--font);
     font-weight: bold;
 }
@@ -112,6 +112,25 @@ body{
     font-size:clamp(20px, 2vh, 35px); 
     color: var(--text);
     font-family: var(--font);
+}
+.ProjectLink{
+    width: 200px;
+    display: block;
+    margin-inline: auto;
+    border: 3px solid var(--accent);
+    background: none;
+    height: 40px;
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--accent);
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+.ProjectLink:hover{
+    scale: 95%;
+    background-color: var(--accent);
+    color: var(--primary);
+
 }
 .ProjFrame{
     width: 100%;
@@ -193,6 +212,8 @@ footer{
     h1{
         font-size: clamp(50px, 2vh, 70px)
     }
-    
+    .ProjFrame{
+        margin-top: 30px;
+    }
     
   }

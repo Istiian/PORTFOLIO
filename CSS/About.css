@@ -6,7 +6,7 @@
 }
 :root{
     --primary:#2C2C2C;
-    --secondary:#186218;
+    --secondary:#5CCF5C;
     --text:#F5F5F5;
     --accent:#FFC107;
     --font:"Expletus Sans";
@@ -108,7 +108,7 @@ body{
     border-radius: 50%;
     transition: opacity 0.5s ease-in-out; /* Add transition for opacity */
     background-color: var(--text);
-    border: 3px solid var(--secondary);
+    border: 3px solid var(--accent);
 }
 
 .hidden {
@@ -116,7 +116,7 @@ body{
 }
 
 .ImageSection h5{
-    color: var(--accent);
+    color: var(--secondary);
     font-size: clamp(25px, 2vw, 30px);
     text-align: center;
 
@@ -131,7 +131,7 @@ body{
     padding-bottom: 50px;
 }
 h1{
-    color: var(--text);
+    color: var(--secondary);
     font-size: clamp(40px, 2vw, 50px);
     word-wrap: break-word;
     font-weight: bold;
@@ -182,19 +182,6 @@ h1{
     
 }
 
-.fa-instagram{
-    color: #E4405F;
-}
-.fa-github{
-    color: white;
-}
-.fa-linkedin{
-    color: #0A66C2;
-}
-.fa-brands:hover{
-    scale: 110%;
-}
-
 footer{
     width: 100%;
     background-color:#2F3A2F;
@@ -218,6 +205,10 @@ footer{
     color: var(--text);
     text-decoration: none;
     font-size: 16px;
+    transition: 0.3s ease;
+}
+.LinkContainer a:hover{
+    color: var(--secondary);
 }
 .LinkContainer{
     display: flex;
